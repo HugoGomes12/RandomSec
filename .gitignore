@@ -1,0 +1,27 @@
+# Arquivos do Android Studio
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures/
+.externalNativeBuild
+.cxx/
+
+# Arquivos do Gradle
+gradle-wrapper.jar
+gradlew
+gradlew.bat
+
+# Arquivos de build
+*.apk
+*.aab
+*.dex
+*.class
+
+# Arquivos de configuração local
+local.properties
+
+# Arquivos de log
+*.log
