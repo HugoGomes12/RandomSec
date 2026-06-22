@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#0D1117"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🔐 RandomSec"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#58A6FF"/>
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/15"
+            android:textSize="16sp"
+            android:textColor="#8B949E"/>
+    </LinearLayout>
+
+    <!-- Card do Tópico Principal -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="#161B22"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvTopic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clique em 🔀 Sortear"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#F0F6FC"
+                android:gravity="center"
+                android:minHeight="100dp"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:background="#30363D"
+                android:layout_marginVertical="16dp"/>
+
+            <TextView
+                android:id="@+id/tvSubTopic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textColor="#8B949E"
+                android:gravity="center"
+                android:minHeight="80dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Botões -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnSortear"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.5"
+            android:text="🔀 Sortear"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:backgroundTint="#58A6FF"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.75"
+            android:text="↺"
+            android:textSize="24sp"
+            android:backgroundTint="#30363D"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.75"
+            android:text="📋"
+            android:textSize="24sp"
+            android:backgroundTint="#30363D"/>
+    </LinearLayout>
+
+    <!-- Botão Salvar Estudo -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="💾 Salvar Tópico Estudado"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:backgroundTint="#238636"/>
+</LinearLayout>
